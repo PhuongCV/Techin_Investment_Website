@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pp-invest1.css">
+    <link rel="stylesheet" href="../boxicons-2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <title>FINTECH</title>
+</head>
+<body id="home">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/pp-product.js"></script>
+    <div class="showcase">
+        <!--navbar top section-->
+        <div class="navbar-top">
+            <ul class="left">
+                <li><a href="#">VietNam</a></li>
+                <li><a href="#"><i class="bx bx-time bx-xs"></i>Mon - Sat: 8:00 - 16:00</a></li>
+                <li><a href="#"><i class="bx bx-map bx-xs"></i>HaNoi</a></li>
+                <li><a href="#"><i class="bx bx-phone bx-xs"></i>0799741910</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#"><i class="bx bxl-twitter bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-pinterest-alt bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-facebook bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-instagram-alt bx-xs"></i></a></li>
+            </ul>
+        </div>
+        <!--navbar bottom section-->
+        <div class="navbar-bottom">
+            <a href="../html/index.html" class="brand-left">TECHIN</a>
+            <ul class="menu-right">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html">Services</a></li>
+                <li><a href="../html/index.html">Portfolio</a></li>
+                <li><a href="../html/index.html">Teams</a></li>
+                <li><a href="../html/index.html">Blog</a></li>
+                <li><a href="../html/index.html">Contact</a></li>
+                <li><a href="../html/signin.html">Sign in</a></li>
+                <li><a href="../html/login.html">Log in</a></li>
+                <li><a href="#"><i class="bx bx-search bx-sm" id="search-btn"></i></a></li>
+            </ul>
+        </div>>
+        <!--showcase content section-->
+        <div class="showcase-content">
+            <div class="wrapper">
+                <h1 class="product-header">INVEST NOW FOR A BRIGHTER TOMORROW WITH US!</h1>
+            </div>
+            <div class="product-body">
+                <div class="product-patten">
+                    <div class="cat-tab">
+                        <ul class="tabs">
+                          <li class="tab-link current" data-tab="tab-1">BUY</li>
+                          <li class="tab-link" data-tab="tab-2">SALE</li>
+                        </ul>
+                      
+                        <div id="tab-1" class="tab-content current">
+                            <div class="ctn">
+                                <form action="product" method = "post">
+                                    <table>
+                                        <tr><td class="request">Stock code: </td><td><input class="input" type= "text" name = "index code" placeholder="Enter the index code" required></td></tr>
+                                        <tr><td class="request">Buy rate: </td><td><input class="input" type= "text" name = "index code" placeholder="Enter the index code" required></td></tr>
+                                        <tr><td class="request">Amount of stocks: </td><td><input class="input" type= "text" name = "amount" placeholder="Enter the amount you want to secure" required></td></tr>
+                                        <tr><td class="request">Total amount: </td><td><input class="input" type= "text" name = "total" required></td></tr>
+                                        <tr class="btn-info"><td></td><td> <input type= "submit" name = "cofirm" value="Buy" class="btn"> <a class="link" href="../html/stock.html">Learn More </a> </td></tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="ctn">
+                                <form action="product" method = "post">
+                                    <table>
+                                        <tr><td class="request">Stock code: </td><td><input class="input" type= "text" name = "index code" placeholder="Enter the index code" required></td></tr>
+                                        <tr><td class="request">Sale rate: </td><td><input class="input" type= "text" name = "index code" placeholder="Enter the index code" required></td></tr>
+                                        <tr><td class="request">Amount of stocks: </td><td><input class="input" type= "text" name = "amount" placeholder="Enter the amount you want to secure" required></td></tr>
+                                        <tr><td class="request">Total amount: </td><td><input class="input" type= "text" name = "total" required></td></tr>
+                                        <tr class="btn-info"><td></td><td> <input type= "submit" name = "cofirm" value="Sell" class="btn"> <a class="link" href="../html/stock.html">Learn More </a> </td></tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                    {
+                       "colorTheme": "dark",
+                       "dateRange": "1M",
+                       "exchange": "NASDAQ",
+                       "showChart": true,
+                       "locale": "en",
+                       "largeChartUrl": "",
+                       "isTransparent": false,
+                       "showSymbolLogo": true,
+                       "showFloatingTooltip": false,
+                       "width": "750",
+                       "height": "450",
+                       "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                       "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+                       "gridLineColor": "rgba(240, 243, 250, 0)",
+                       "scaleFontColor": "rgba(106, 109, 120, 1)",
+                       "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                       "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                       "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                       "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                       "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
